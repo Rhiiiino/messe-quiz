@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPVG Quiz - Personalratsrechte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Progress Bar -->
+        <div id="progressBar" class="progress-bar hidden">
+            <div id="progressFill" class="progress-fill"></div>
+            <div id="progressText" class="progress-text">Frage 1 von 10</div>
+        </div>
+
+        <!-- Screen 1: Start Screen -->
+        <div id="startScreen" class="screen active">
+            <div class="card">
+                <div class="logo">🎯</div>
+                <h1>Quiz: Personalratsrechte</h1>
+                <p class="subtitle">nach dem Hessischen Personalvertretungsgesetz (HPVG)</p>
+
+                <div class="intro-text">
+                    <p>Testen Sie Ihr Wissen über die wichtigsten Rechte des Personalrats in der Helaba.</p>
+                    <p>Dieses Quiz behandelt zentrale Themen wie:</p>
+                    <ul>
+                        <li>Beteiligungsrechte und Mitbestimmung</li>
+                        <li>Einstellungen und Versetzungen</li>
+                        <li>Arbeitszeit und soziale Angelegenheiten</li>
+                        <li>Dienstvereinbarungen und Einigungsstelle</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <strong>10 Fragen</strong> • ca. 1-2 Minuten • Multiple Choice
+                </div>
+
+                <button id="startBtn" class="btn btn-primary">
+                    Quiz starten
+                </button>
+            </div>
+        </div>
+
+        <!-- Screen 2: Quiz -->
+        <div id="quizScreen" class="screen">
+            <div class="card">
+                <div id="questionCard" class="question-card">
+                    <div class="question-number" id="questionNumber">Frage 1</div>
+                    <h2 id="questionText" class="question-text"></h2>
+
+                    <div id="optionsContainer" class="options-container"></div>
+
+                    <div id="feedback" class="feedback hidden">
+                        <div class="feedback-icon"></div>
+                        <div class="feedback-text"></div>
+                    </div>
+
+                    <button id="nextBtn" class="btn btn-primary hidden">
+                        Nächste Frage
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 3: Results -->
+        <div id="resultScreen" class="screen">
+            <div class="card">
+                <div class="result-icon" id="resultIcon">⭐</div>
+                <h1 id="resultTitle">Ergebnis</h1>
+                <div class="score-display">
+                    <div class="score-big" id="scoreBig">0/10</div>
+                    <div class="score-percentage" id="scorePercentage">0%</div>
+                </div>
+
+                <div class="result-message" id="resultMessage"></div>
+
+                <div id="resultDetails" class="result-details"></div>
+
+                <button id="resetBtn" class="btn btn-primary">
+                    Neues Quiz starten
+                </button>
+            </div>
+        </div>
+
+        <!-- Confetti Container -->
+        <div id="confetti" class="confetti-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

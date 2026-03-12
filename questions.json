@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Gilt das HPVG vollumfänglich für Anstalten des öffentlichen Rechts in Hessen?",
+      "options": [
+        "Ja, ohne Einschränkungen",
+        "Nein, es gilt nur teilweise",
+        "Nur für kommunale AöR",
+        "Nur wenn in der Satzung vereinbart"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "question": "Welches ist das stärkste Beteiligungsrecht des Personalrats?",
+      "options": [
+        "Information",
+        "Anhörung",
+        "Mitbestimmung",
+        "Beratung"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 3,
+      "question": "Ist der Personalrat bei Einstellungen von Mitarbeitenden zu beteiligen?",
+      "options": [
+        "Nein, das entscheidet die Dienststelle allein",
+        "Ja, aber nur beratend",
+        "Ja, mitbestimmungspflichtig nach § 77 HPVG",
+        "Nur bei unbefristeten Einstellungen"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "question": "Unter welchen Paragraphen fällt die Regelung der Arbeitszeit?",
+      "options": [
+        "§ 74 HPVG (Soziale Angelegenheiten)",
+        "§ 77 HPVG (Personalangelegenheiten)",
+        "§ 81 HPVG (Organisatorische Angelegenheiten)",
+        "§ 111 HPVG (Gerichtsverfahren)"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "question": "Was passiert, wenn eine mitbestimmungspflichtige Maßnahme ohne Zustimmung des Personalrats durchgeführt wird?",
+      "options": [
+        "Die Maßnahme ist wirksam, aber formell fehlerhaft",
+        "Die Maßnahme ist unwirksam",
+        "Nur eine Geldbuße für die Dienststelle",
+        "Keine rechtlichen Konsequenzen"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "question": "Wer entscheidet bei Meinungsverschiedenheiten in mitbestimmungspflichtigen Angelegenheiten?",
+      "options": [
+        "Die Dienststelle allein",
+        "Der Personalrat allein",
+        "Die Einigungsstelle",
+        "Das Arbeitsgericht"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "question": "Wer darf den Personalrat formell anhören?",
+      "options": [
+        "Jeder Mitarbeiter",
+        "Der Abteilungsleiter",
+        "Ausschließlich der Dienststellenleiter",
+        "Der Personalratsvorsitzende initiiert selbst"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "question": "Wann sind Dienstvereinbarungen zulässig?",
+      "options": [
+        "Immer, unabhängig von anderen Regelungen",
+        "Nur wenn keine gesetzliche oder tarifvertragliche Regelung besteht",
+        "Nie, das HPVG regelt alles abschließend",
+        "Nur mit Zustimmung aller Mitarbeitenden"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "question": "Die Personalabteilung plant eine Versetzung und informiert den Personalrat telefonisch. Ist das korrekt?",
+      "options": [
+        "Ja, telefonische Information ist ausreichend",
+        "Nein, Versetzungen erfordern Mitbestimmung nach § 77 HPVG",
+        "Ja, wenn der Personalrat mündlich zustimmt",
+        "Kommt darauf an, wie lang die Versetzung dauert"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "question": "Welches Gericht entscheidet über personalvertretungsrechtliche Streitigkeiten?",
+      "options": [
+        "Arbeitsgericht",
+        "Verwaltungsgericht",
+        "Amtsgericht",
+        "Sozialgericht"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

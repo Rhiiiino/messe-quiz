@@ -1,0 +1,11 @@
+node_modules/
+*.db
+*.log
+.DS_Store
+.env
+.env.local
+.env.production
+backups/
+*.pem
+*.key
+.railway
