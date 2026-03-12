@@ -4,7 +4,8 @@
   "description": "Quiz-App für Messestand - Personalratsrechte nach HPVG",
   "main": "server.js",
   "scripts": {
-    "start": "node server-production.js",
+    "start": "node server.js",
+    "prod": "node server-production.js",
     "dev": "nodemon server.js",
     "docker:build": "docker build -t hpvg-quiz .",
     "docker:run": "docker-compose up -d",
