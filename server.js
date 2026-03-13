@@ -39,12 +39,7 @@ const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf8'));
 
 // Health Check (für Railway)
 app.get('/health', (req, res) => {
-  res.json({
-    status: 'ok',
-    timestamp: new Date().toISOString(),
-    uptime: process.uptime(),
-    database: dbReady ? 'connected' : 'unavailable'
-  });
+  res.status(200).send('OK');
 });
 
 // Fragen abrufen (ohne korrekte Antworten)
