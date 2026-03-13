@@ -29,6 +29,11 @@ const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf8'));
 
 // API Routes
 
+// Health Check (für Railway)
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
 // Fragen abrufen (ohne korrekte Antworten)
 app.get('/api/questions', (req, res) => {
   const questionsWithoutAnswers = questions.questions.map(q => ({
