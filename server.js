@@ -11,18 +11,26 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // SQLite Datenbank initialisieren
-const db = new Database('leads.db');
+let db;
+let dbReady = false;
 
-// Tabelle für anonyme Quiz-Ergebnisse erstellen
-db.exec(`
-  CREATE TABLE IF NOT EXISTS quiz_results (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    score INTEGER NOT NULL,
-    max_score INTEGER NOT NULL,
-    percentage REAL NOT NULL,
-    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
-  )
-`);
+try {
+  db = new Database('leads.db');
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS quiz_results (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      score INTEGER NOT NULL,
+      max_score INTEGER NOT NULL,
+      percentage REAL NOT NULL,
+      timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `);
+  dbReady = true;
+  console.log('✅ SQLite Datenbank erfolgreich initialisiert');
+} catch (error) {
+  console.error('❌ Fehler bei DB-Initialisierung:', error.message);
+  console.error('Server startet ohne Datenbank-Funktionalität.');
+}
 
 // Fragen laden
 const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf8'));
@@ -31,7 +39,12 @@ const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf8'));
 
 // Health Check (für Railway)
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    database: dbReady ? 'connected' : 'unavailable'
+  });
 });
 
 // Fragen abrufen (ohne korrekte Antworten)
@@ -46,6 +59,10 @@ app.get('/api/questions', (req, res) => {
 
 // Quiz-Submission und Validierung
 app.post('/api/submit', (req, res) => {
+  if (!dbReady) {
+    return res.status(503).json({ error: 'Datenbank nicht verfügbar' });
+  }
+
   const { answers } = req.body;
 
   // Validierung
@@ -106,6 +123,7 @@ app.post('/api/submit', (req, res) => {
 
 // Admin-Route: Alle Ergebnisse abrufen
 app.get('/api/admin/results', (req, res) => {
+  if (!dbReady) return res.status(503).json({ error: 'Datenbank nicht verfügbar' });
   try {
     const results = db.prepare('SELECT * FROM quiz_results ORDER BY timestamp DESC').all();
     res.json(results);
@@ -158,13 +176,26 @@ app.get('/api/admin/export', (req, res) => {
   }
 });
 
-// Server starten
-app.listen(PORT, () => {
+// Graceful Shutdown
+process.on('SIGTERM', () => {
+  console.log('SIGTERM empfangen. Server wird heruntergefahren...');
+  if (db) db.close();
+  process.exit(0);
+});
+
+process.on('SIGINT', () => {
+  console.log('SIGINT empfangen. Server wird heruntergefahren...');
+  if (db) db.close();
+  process.exit(0);
+});
+
+// Server starten – 0.0.0.0 explizit binden (wichtig für Railway/Docker)
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`
 ╔═══════════════════════════════════════════╗
 ║   🎯 HPVG Quiz-App gestartet             ║
 ║                                           ║
-║   Server läuft auf: http://localhost:${PORT}  ║
+║   Server läuft auf: http://0.0.0.0:${PORT}    ║
 ║   Admin-Panel: /admin.html                ║
 ║                                           ║
 ║   Bereit für Messestand! 🎪               ║

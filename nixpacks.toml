@@ -1,0 +1,11 @@
+# Nixpacks-Konfiguration für Railway
+# Stellt sicher, dass C++ Build-Tools für better-sqlite3 vorhanden sind
+
+[phases.setup]
+nixPkgs = ["python3", "gcc", "gnumake"]
+
+[phases.install]
+cmds = ["npm ci --production"]
+
+[start]
+cmd = "node server.js"
