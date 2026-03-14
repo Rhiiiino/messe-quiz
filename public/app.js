@@ -240,6 +240,7 @@ function showResults(result) {
           : `✗ Ihre Antwort war falsch<br>Richtig wäre: ${item.correctAnswerText}`
         }
       </div>
+      ${item.impact ? `<div class="result-impact">💡 ${item.impact}</div>` : ''}
     `;
     detailsContainer.appendChild(div);
   });

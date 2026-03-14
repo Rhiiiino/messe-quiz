@@ -477,6 +477,19 @@ input[type="checkbox"] {
   font-size: 13px;
   color: var(--text-light);
   line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.result-impact {
+  font-size: 13px;
+  padding: 8px 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 6px;
+  color: var(--primary-dark);
+  font-style: italic;
+  margin-top: 8px;
+  line-height: 1.4;
 }
 
 /* Confetti */

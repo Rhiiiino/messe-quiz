@@ -85,7 +85,8 @@ app.post('/api/submit', (req, res) => {
       userAnswer: userAnswer,
       correctAnswer: q.correctAnswer,
       isCorrect: isCorrect,
-      correctAnswerText: q.options[q.correctAnswer]
+      correctAnswerText: q.options[q.correctAnswer],
+      impact: q.impact
     });
   });
 
