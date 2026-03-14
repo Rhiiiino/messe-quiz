@@ -99,6 +99,13 @@ function loadQuestion() {
   feedback.classList.add('hidden');
   nextBtn.classList.add('hidden');
 
+  // Update Button Text for Last Question
+  if (state.currentQuestionIndex === state.questions.length - 1) {
+    nextBtn.textContent = 'Zur Auswertung des Quiz';
+  } else {
+    nextBtn.textContent = 'Nächste Frage';
+  }
+
   question.options.forEach((option, index) => {
     const button = document.createElement('button');
     button.className = 'option-btn';
