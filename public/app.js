@@ -228,6 +228,12 @@ function showResults(result) {
   detailsContainer.innerHTML = '<h3 style="margin-bottom: 16px; font-size: 16px; color: #6b7280;">Ihre Antworten:</h3>';
 
   results.forEach((item, index) => {
+    // Debug: Log the first item to check impact field
+    if (index === 0) {
+      console.log('DEBUG: First result item:', item);
+      console.log('DEBUG: Has impact?', item.impact);
+    }
+
     const div = document.createElement('div');
     div.className = `result-item ${item.isCorrect ? 'correct' : 'wrong'}`;
     div.innerHTML = `
