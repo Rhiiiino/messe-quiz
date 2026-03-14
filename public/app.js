@@ -3,7 +3,8 @@ const state = {
   questions: [],
   currentQuestionIndex: 0,
   answers: [],
-  hasAnsweredCurrent: false
+  hasAnsweredCurrent: false,
+  isProcessing: false
 };
 
 // DOM Elements
@@ -147,9 +148,14 @@ function handleAnswer(answerIndex, button) {
 
 // Next Question
 function handleNextQuestion() {
+  // Prevent multiple clicks
+  if (state.isProcessing) return;
+  state.isProcessing = true;
+
   if (state.currentQuestionIndex < state.questions.length - 1) {
     state.currentQuestionIndex++;
     loadQuestion();
+    state.isProcessing = false;
   } else {
     submitQuiz();
   }
@@ -171,16 +177,22 @@ async function submitQuiz() {
       })
     });
 
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
     const result = await response.json();
 
     if (result.success) {
       setTimeout(() => {
         showResults(result);
+        state.isProcessing = false;
       }, 300);
     } else {
       alert('Ein Fehler ist aufgetreten: ' + result.error);
       nextBtn.classList.remove('loading');
       nextBtn.disabled = false;
+      state.isProcessing = false;
     }
 
   } catch (error) {
@@ -188,6 +200,7 @@ async function submitQuiz() {
     alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
     nextBtn.classList.remove('loading');
     nextBtn.disabled = false;
+    state.isProcessing = false;
   }
 }
 
@@ -278,6 +291,7 @@ function handleReset() {
   state.currentQuestionIndex = 0;
   state.answers = [];
   state.hasAnsweredCurrent = false;
+  state.isProcessing = false;
 
   // Reset UI
   switchScreen(screens.result, screens.start);
