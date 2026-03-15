@@ -29,9 +29,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
 }
 
 /* Container */
@@ -81,9 +87,15 @@ body {
 .card {
   background: var(--card-bg);
   border-radius: var(--border-radius);
-  padding: 40px 32px;
+  padding: 24px 16px;
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 40px 32px;
+  }
 }
 
 /* Screen Management */
