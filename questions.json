@@ -2,10 +2,10 @@
   "questions": [
     {
       "id": 1,
-      "question": "Eine hessische AöR will ein Team von 6 auf 3 Personen verkleinern und überwiegend remote arbeiten lassen. Der Chef sagt: „Der Personalrat hat damit nichts zu tun.\" Was stimmt?",
+      "question": "Eine Dienststelle in Hessen möchte mehr Homeoffice einführen. Der Chef sagt: „Der Personalrat hat damit nichts zu tun." Was stimmt?",
       "options": [
-        "Der Chef entscheidet allein",
-        "Der Personalrat darf nur beraten",
+        "Der Chef hat recht, das ist eine reine Managemententscheidung",
+        "Der Personalrat darf nur beraten, nicht blockieren",
         "Das HPVG gilt nicht für Homeoffice",
         "Falsch – Der Personalrat muss bei Arbeitszeit und Arbeitsort mitbestimmen (§ 74 HPVG)"
       ],
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "question": "Eine mitbestimmungspflichtige Maßnahme wird ohne Beteiligung des Personalrats umgesetzt. Die Dienststelle macht einfach weiter. Welche Folge hat das?",
+      "question": "Eine mitbestimmungspflichtige Maßnahme wird umgesetzt, ohne den Personalrat zu beteiligen. Welche Folge hat das?",
       "options": [
         "Die Maßnahme bleibt gültig",
         "Es gibt nur eine Abmahnung",
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "question": "Ein Mitarbeiter soll versetzt werden. Der Chef informiert den Personalrat nur telefonisch. Ist das ausreichend?",
+      "question": "Ein Mitarbeiter soll versetzt werden. Der Chef informiert den Personalrat lediglich kurz darüber. Reicht das aus?",
       "options": [
         "Ja, Information reicht",
         "Ja, wenn der Personalrat zustimmt",
@@ -37,7 +37,7 @@
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Das ist eine echte Mitbestimmung – der Personalrat könnte dafür eintreten!"
+      "impact": "Bei Versetzungen kann der Personalrat aktiv eingreifen!"
     },
     {
       "id": 4,
@@ -63,7 +63,7 @@
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Einstellungen sind mitbestimmungspflichtig – der Personalrat kann blockieren!"
+      "impact": "Einstellungen gehören zu den klassischen Mitbestimmungsfällen."
     },
     {
       "id": 6,
@@ -80,7 +80,7 @@
     },
     {
       "id": 7,
-      "question": "Ein Mitarbeiter beschwert sich über seine Leistungsbeurteilung. Der Personalrat sagt: „Das ist nur Sache deines Vorgesetzten.\" Ist das richtig?",
+      "question": "Ein Mitarbeiter beschwert sich über seine Leistungsbeurteilung. Der Personalrat sagt: „Das ist nur Sache deines Vorgesetzten." Ist das richtig?",
       "options": [
         "Ja, der Personalrat ist nicht zuständig",
         "Ja, wenn der Chef entscheidet",
@@ -89,7 +89,7 @@
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Der Personalrat ist deine erste Anlaufstelle – auch für Einzelfälle!"
+      "impact": "Der Personalrat ist eine wichtige Anlaufstelle für Beschäftigte."
     },
     {
       "id": 8,
@@ -106,7 +106,7 @@
     },
     {
       "id": 9,
-      "question": "Der Chef will einen Mitarbeiter „zur Strafe\" versetzen. Der Personalrat verweigert die Zustimmung. Was passiert?",
+      "question": "Der Chef will einen Mitarbeiter versetzen. Der Personalrat verweigert die Zustimmung. Was passiert?",
       "options": [
         "Die Versetzung erfolgt trotzdem",
         "Der Chef entscheidet allein",
@@ -115,7 +115,7 @@
       ],
       "correctAnswer": 3,
       "type": "surprise",
-      "impact": "Bestrafungs-Versetzung? Der Personalrat hat Überraschungs-Power!"
+      "impact": "Ohne Beteiligung des Personalrats geht es nicht einfach weiter."
     },
     {
       "id": 10,
@@ -132,7 +132,7 @@
     },
     {
       "id": 11,
-      "question": "Die Dienststelle führt ein KI-Tool ein, das automatisch Einarbeitungspläne erstellt. Der Chef sagt: „Das ist nur Technik, der Personalrat ist nicht zuständig.\" Was stimmt?",
+      "question": "Die Dienststelle führt ein KI-System ein, das automatisch Einarbeitungspläne erstellt. Der Chef sagt: „Das ist nur Technik – der Personalrat ist nicht zuständig." Was stimmt?",
       "options": [
         "Technik ist immer Sache der IT",
         "Der Personalrat darf nur informiert werden",
@@ -141,7 +141,7 @@
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Personalrat kann eine Dienstvereinbarung aushandeln – z.B. für Transparenz & Überprüfbarkeit der KI!"
+      "impact": "Der Personalrat kann hier z.B. eine Dienstvereinbarung zur Nutzung der KI verlangen."
     },
     {
       "id": 12,
@@ -158,7 +158,7 @@
     },
     {
       "id": 13,
-      "question": "Ein Mitarbeiter ist mehrfach längere Zeit krank. Die Dienststelle sagt: „Das ist nur Sache des Arztes.\" Was gilt?",
+      "question": "Ein Mitarbeiter ist mehrfach längere Zeit krank. Die Dienststelle sagt: „Das ist nur Sache des Arztes." Was gilt?",
       "options": [
         "Die Dienststelle entscheidet allein",
         "Der Personalrat ist nicht beteiligt",
