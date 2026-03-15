@@ -172,7 +172,7 @@ CSV-Export aller Ergebnisse.
 CREATE TABLE quiz_results (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   score INTEGER NOT NULL,           -- Anzahl richtiger Antworten
-  max_score INTEGER NOT NULL,       -- Gesamtzahl Fragen (10)
+  max_score INTEGER NOT NULL,       -- Gesamtzahl Fragen (13)
   percentage REAL NOT NULL,         -- Prozentsatz
   timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
@@ -340,6 +340,12 @@ PORT=3000  # Optional, Default: 3000
 - 100MB Disk Space
 - Port 3000 (oder custom)
 
+### Render.com Deployment
+- **Status**: 🟢 Live auf render.com
+- **Health-Check**: Cronjob pingt `/health` alle 5 Minuten an
+- **Grund**: Verhinderung von Inaktivität (Spin-down auf kostenlosen Servern)
+- **Alternative**: External monitoring service (z.B. Healthchecks.io) kann konfiguriert werden
+
 ## 🔍 Debugging
 
 ### PM2 Logs
@@ -501,8 +507,18 @@ document.addEventListener('click', () => {
 - **Zweck**: Messestand-Quiz für HPVG-Schulungen
 - **Zielgruppe**: Mitarbeiter in AöR, Personalräte, Führungskräfte
 
+## 📝 Aktuelle Features (März 2026)
+
+- ✅ **13 optimierte Fragen** (HPVG-Personalratsrechte, KI, SBV, BEM)
+- ✅ **Impact-Statements** auf Ergebnisseite für besseres Lernen
+- ✅ **Randomisierte Antwortoptionen** (verhindert Pattern-Erkennung)
+- ✅ **Mobile-optimiert** (reduzierte Spacing auf Smartphones)
+- ✅ **Race-Condition Fix** (isProcessing Flag für Button-Sicherheit)
+- ✅ **Cronjob-Schutz** gegen Inaktivität auf Render.com
+- ✅ **Debug-Logging** für Impact-Feld-Überprüfung
+
 ---
 
-**Letzte Aktualisierung:** 2026-01-27
-**Version:** 1.0.0
-**Status:** ✅ Production Ready
+**Letzte Aktualisierung:** 2026-03-15
+**Version:** 1.1.0
+**Status:** ✅ Production Ready (Render.com)
