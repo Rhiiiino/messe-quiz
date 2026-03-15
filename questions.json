@@ -1,8 +1,8 @@
 {
-  "qüstions": [
+  "questions": [
     {
       "id": 1,
-      "qüstion": "Eine Dienststelle in Hessen möchte mehr Homeoffice einführen. Der Chef sagt: Der Personalrat hat damit nichts zu tun. Was stimmt?",
+      "question": "Eine Dienststelle in Hessen möchte mehr Homeoffice einführen. Der Chef sagt: Der Personalrat hat damit nichts zu tun. Was stimmt?",
       "options": [
         "Der Chef hat recht, das ist eine reine Managemententscheidung",
         "Der Personalrat darf nur beraten, nicht blockieren",
@@ -11,29 +11,29 @@
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Der Personalrat kann hier für dich aktiv werden - nutze das!"
+      "impact": "Der Personalrat kann hier für dich aktiv werden – nutze das!"
     },
     {
       "id": 2,
-      "qüstion": "Eine mitbestimmungspflichtige Massnahme wird umgesetzt, ohne den Personalrat zu beteiligen. Welche Folge hat das?",
+      "question": "Eine mitbestimmungspflichtige Maßnahme wird umgesetzt, ohne den Personalrat zu beteiligen. Welche Folge hat das?",
       "options": [
-        "Die Massnahme bleibt gültig",
+        "Die Maßnahme bleibt gültig",
         "Es gibt nur eine Abmahnung",
         "Der Personalrat kann nur protestieren",
-        "Die Massnahme ist rechtlich unwirksam"
+        "Die Maßnahme ist rechtlich unwirksam"
       ],
       "correctAnswer": 3,
       "type": "surprise",
-      "impact": "Das ist die Superpower des Personalrats - Rechtsschutz für Mitarbeiter!"
+      "impact": "Das ist die Superpower des Personalrats – Rechtsschutz für Mitarbeiter!"
     },
     {
       "id": 3,
-      "qüstion": "Ein Mitarbeiter soll versetzt werden. Der Chef informiert den Personalrat lediglich kurz darüber. Reicht das aus?",
+      "question": "Ein Mitarbeiter soll versetzt werden. Der Chef informiert den Personalrat lediglich kurz darüber. Reicht das aus?",
       "options": [
         "Ja, Information reicht",
         "Ja, wenn der Personalrat zustimmt",
-        "Nur bei dringenden Faellen",
-        "Nein - Versetzungen unterliegen der Mitbestimmung (§ 77 HPVG)"
+        "Nur bei dringenden Fällen",
+        "Nein – Versetzungen unterliegen der Mitbestimmung (§ 77 HPVG)"
       ],
       "correctAnswer": 3,
       "type": "scenario",
@@ -41,7 +41,7 @@
     },
     {
       "id": 4,
-      "qüstion": "Welche Beteiligungsformen hat der Personalrat grundsaetzlich?",
+      "question": "Welche Beteiligungsformen hat der Personalrat grundsätzlich?",
       "options": [
         "Beratung, Kontrolle, Genehmigung",
         "Zustimmung, Widerspruch, Klage",
@@ -50,11 +50,11 @@
       ],
       "correctAnswer": 3,
       "type": "concept",
-      "impact": "Mitbestimmung ist das Staerkste - kein Recht ohne Zustimmung!"
+      "impact": "Mitbestimmung ist das stärkste Beteiligungsrecht."
     },
     {
       "id": 5,
-      "qüstion": "Der Chef möchte eine Bewerberin einstellen. Der Personalrat verweigert die Zustimmung. Was gilt?",
+      "question": "Der Chef möchte eine Bewerberin einstellen. Der Personalrat verweigert die Zustimmung. Was gilt?",
       "options": [
         "Der Chef kann trotzdem einstellen",
         "Der Personalrat darf nur beraten",
@@ -63,41 +63,41 @@
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Einstellungen gehören zu den klassischen Mitbestimmungsfaellen."
+      "impact": "Einstellungen gehören zu den klassischen Mitbestimmungsfällen."
     },
     {
       "id": 6,
-      "qüstion": "Dienststelle und Personalrat können sich bei einer mitbestimmungspflichtigen Massnahme nicht einigen. Wer entscheidet?",
+      "question": "Dienststelle und Personalrat können sich bei einer mitbestimmungspflichtigen Maßnahme nicht einigen. Wer entscheidet?",
       "options": [
-        "Der Behöndenleiter",
+        "Der Behördenleiter",
         "Das Arbeitsgericht",
         "Das Ministerium",
         "Die Einigungsstelle"
       ],
       "correctAnswer": 3,
       "type": "surprise",
-      "impact": "Es gibt eine neutrale Instanz - keiner kann einfach durchboxen!"
+      "impact": "Eine neutrale Instanz sorgt für eine verbindliche Lösung."
     },
     {
       "id": 7,
-      "qüstion": "Ein Mitarbeiter beschwert sich über seine Leistungsbeurteilung. Der Personalrat sagt: Das ist nur Sache deines Vorgesetzten. Ist das richtig?",
+      "question": "Ein Mitarbeiter beschwert sich über seine Leistungsbeurteilung. Der Personalrat sagt: Das ist nur Sache deines Vorgesetzten. Ist das richtig?",
       "options": [
-        "Ja, der Personalrat ist nicht zustaendig",
+        "Ja, der Personalrat ist nicht zuständig",
         "Ja, wenn der Chef entscheidet",
         "Nur bei Beförderungen",
-        "Nein - Beschaeftigte dürfen sich mit Beschwerden an den Personalrat wenden"
+        "Nein – Beschäftigte dürfen sich mit Beschwerden an den Personalrat wenden"
       ],
       "correctAnswer": 3,
       "type": "scenario",
-      "impact": "Der Personalrat ist eine wichtige Anlaufstelle für Beschaeftigte."
+      "impact": "Der Personalrat ist eine wichtige Anlaufstelle für Beschäftigte."
     },
     {
       "id": 8,
-      "qüstion": "Wann kann eine Dienstvereinbarung abgeschlossen werden?",
+      "question": "Wann kann eine Dienstvereinbarung abgeschlossen werden?",
       "options": [
         "Immer, wenn Dienststelle und Personalrat wollen",
-        "Nur bei organisatorischen Massnahmen",
-        "Nur bei personellen Massnahmen",
+        "Nur bei organisatorischen Maßnahmen",
+        "Nur bei personellen Maßnahmen",
         "Wenn keine gesetzliche oder tarifliche Regelung entgegensteht"
       ],
       "correctAnswer": 3,
@@ -106,12 +106,12 @@
     },
     {
       "id": 9,
-      "qüstion": "Der Chef will einen Mitarbeiter versetzen. Der Personalrat verweigert die Zustimmung. Was passiert?",
+      "question": "Der Chef will einen Mitarbeiter versetzen. Der Personalrat verweigert die Zustimmung. Was passiert?",
       "options": [
         "Die Versetzung erfolgt trotzdem",
         "Der Chef entscheidet allein",
         "Der Personalrat darf nur beraten",
-        "Die Massnahme kann ohne Zustimmung nicht umgesetzt werden"
+        "Die Maßnahme kann ohne Zustimmung nicht umgesetzt werden"
       ],
       "correctAnswer": 3,
       "type": "surprise",
@@ -119,7 +119,7 @@
     },
     {
       "id": 10,
-      "qüstion": "Bei einem Streit zwischen Personalrat und Dienststelle über Beteiligungsrechte: Welches Gericht ist zustaendig?",
+      "question": "Bei einem Streit zwischen Personalrat und Dienststelle über Beteiligungsrechte: Welches Gericht ist zuständig?",
       "options": [
         "Arbeitsgericht",
         "Sozialgericht",
@@ -132,12 +132,12 @@
     },
     {
       "id": 11,
-      "qüstion": "Die Dienststelle führt ein KI-System ein, das automatisch Einarbeitungsplaene erstellt. Der Chef sagt: Das ist nur Technik - der Personalrat ist nicht zustaendig. Was stimmt?",
+      "question": "Die Dienststelle führt ein KI-System ein, das automatisch Einarbeitungspläne erstellt. Der Chef sagt: Das ist nur Technik – der Personalrat ist nicht zuständig. Was stimmt?",
       "options": [
         "Technik ist immer Sache der IT",
         "Der Personalrat darf nur informiert werden",
         "KI ist rechtlich noch nicht geregelt",
-        "Falsch - organisatorische Massnahmen können mitbestimmungspflichtig sein (§ 81 HPVG)"
+        "Falsch – organisatorische Maßnahmen können mitbestimmungspflichtig sein (§ 81 HPVG)"
       ],
       "correctAnswer": 3,
       "type": "scenario",
@@ -145,12 +145,12 @@
     },
     {
       "id": 12,
-      "qüstion": "Ein schwerbehinderter Mitarbeiter soll versetzt werden. Welche Beteiligung ist erforderlich?",
+      "question": "Ein schwerbehinderter Mitarbeiter soll versetzt werden. Welche Beteiligung ist erforderlich?",
       "options": [
         "Nur der Personalrat",
         "Nur die Dienststelle",
         "Nur das Integrationsamt",
-        "Die Schwerbehindertenvertretung muss zusaetzlich beteiligt werden"
+        "Die Schwerbehindertenvertretung muss zusätzlich beteiligt werden"
       ],
       "correctAnswer": 3,
       "type": "concept",
@@ -158,7 +158,7 @@
     },
     {
       "id": 13,
-      "qüstion": "Ein Mitarbeiter ist mehrfach laenger krank. Die Dienststelle sagt: Das ist nur Sache des Arztes. Was gilt?",
+      "question": "Ein Mitarbeiter ist mehrfach länger krank. Die Dienststelle sagt: Das ist nur Sache des Arztes. Was gilt?",
       "options": [
         "Die Dienststelle entscheidet allein",
         "Der Personalrat ist nicht beteiligt",
@@ -167,7 +167,7 @@
       ],
       "correctAnswer": 3,
       "type": "concept",
-      "impact": "BEM hilft, Arbeitspaehigkeit und Arbeitsplatz zu erhalten."
+      "impact": "BEM hilft, Arbeitsfähigkeit und Arbeitsplatz zu erhalten."
     }
   ]
 }
