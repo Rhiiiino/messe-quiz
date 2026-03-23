@@ -1,13 +1,27 @@
-/* CSS Variables */
+/* Helaba Farbpalette - CSS Variables */
 :root {
-  --primary-color: #2563eb;
-  --primary-dark: #1e40af;
-  --success-color: #10b981;
-  --error-color: #ef4444;
+  /* Primärfarben */
+  --primary-color: #004874;           /* Helaba Dunkelblau */
+  --primary-dark: #003556;            /* Dunkelblau - Hover */
+  --primary-light: #e8f0f7;           /* Hellblau - Background */
+
+  /* Akzentfarben */
+  --accent-cyan: #009ee3;             /* Cyan Blau - Highlights */
+  --accent-green: #4da630;            /* Grün - Success/Richtig */
+  --accent-red: #FF0000;              /* Rot - Fehler/Falsch */
+
+  /* Graustufen */
+  --gray-1: #ececec;                  /* Hell */
+  --gray-2: #dadada;                  /* Mittel */
+  --gray-3: #b2b2b2;                  /* Dunkel */
+
+  /* Text & Background */
   --text-color: #1f2937;
   --text-light: #6b7280;
   --bg-color: #f3f4f6;
   --card-bg: #ffffff;
+
+  /* Spacing & Design */
   --border-radius: 16px;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -23,7 +37,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #004874 0%, #005a94 50%, #009ee3 100%);
   color: var(--text-color);
   min-height: 100vh;
   display: flex;
@@ -220,7 +234,7 @@ input[type="text"]:focus,
 input[type="email"]:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 72, 116, 0.1);
 }
 
 .checkbox-group {
@@ -303,10 +317,11 @@ input[type="checkbox"] {
   text-align: center;
   margin: 24px 0;
   padding: 16px;
-  background: var(--bg-color);
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary-color);
   border-radius: 12px;
   font-size: 14px;
-  color: var(--text-light);
+  color: var(--primary-color);
 }
 
 /* Question Card */
@@ -354,7 +369,7 @@ input[type="checkbox"] {
 
 .option-btn:hover {
   border-color: var(--primary-color);
-  background: rgba(37, 99, 235, 0.05);
+  background: rgba(0, 72, 116, 0.05);
   transform: translateX(4px);
 }
 
@@ -363,20 +378,20 @@ input[type="checkbox"] {
 }
 
 .option-btn.selected {
-  border-color: var(--primary-color);
-  background: rgba(37, 99, 235, 0.1);
+  border-color: var(--accent-cyan);
+  background: rgba(0, 158, 227, 0.1);
   font-weight: 600;
 }
 
 .option-btn.correct {
-  border-color: var(--success-color);
-  background: rgba(16, 185, 129, 0.1);
+  border-color: var(--accent-green);
+  background: rgba(77, 166, 48, 0.1);
   animation: pulse 0.5s ease-out;
 }
 
 .option-btn.wrong {
-  border-color: var(--error-color);
-  background: rgba(239, 68, 68, 0.1);
+  border-color: var(--accent-red);
+  background: rgba(255, 0, 0, 0.1);
   animation: shake 0.5s ease-out;
 }
 
@@ -401,13 +416,13 @@ input[type="checkbox"] {
 }
 
 .feedback.correct {
-  background: rgba(16, 185, 129, 0.1);
-  border: 2px solid var(--success-color);
+  background: rgba(77, 166, 48, 0.1);
+  border: 2px solid var(--accent-green);
 }
 
 .feedback.wrong {
-  background: rgba(239, 68, 68, 0.1);
-  border: 2px solid var(--error-color);
+  background: rgba(255, 0, 0, 0.1);
+  border: 2px solid var(--accent-red);
 }
 
 .feedback-icon {
@@ -453,8 +468,10 @@ input[type="checkbox"] {
   line-height: 1.6;
   margin-bottom: 32px;
   padding: 20px;
-  background: var(--bg-color);
+  background: var(--primary-light);
   border-radius: 12px;
+  color: var(--primary-color);
+  font-weight: 500;
 }
 
 .result-details {
@@ -472,11 +489,11 @@ input[type="checkbox"] {
 }
 
 .result-item.correct {
-  border-left-color: var(--success-color);
+  border-left-color: var(--accent-green);
 }
 
 .result-item.wrong {
-  border-left-color: var(--error-color);
+  border-left-color: var(--accent-red);
 }
 
 .result-question {
@@ -495,7 +512,7 @@ input[type="checkbox"] {
 .result-impact {
   font-size: 13px;
   padding: 8px 12px;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(0, 72, 116, 0.1);
   border-left: 3px solid var(--primary-color);
   border-radius: 6px;
   color: var(--primary-dark);
@@ -521,6 +538,14 @@ input[type="checkbox"] {
   height: 10px;
   background: var(--primary-color);
   animation: confettiFall 3s ease-out forwards;
+}
+
+.confetti-piece:nth-child(even) {
+  background: var(--accent-cyan);
+}
+
+.confetti-piece:nth-child(3n) {
+  background: var(--accent-green);
 }
 
 @keyframes confettiFall {
