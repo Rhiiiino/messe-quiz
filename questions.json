@@ -4,7 +4,7 @@
       "id": 1,
       "question": "Eine Dienststelle in Hessen möchte mehr Homeoffice einführen. Der Chef sagt: Der Personalrat hat damit nichts zu tun. Was stimmt?",
       "options": [
-        "Falsch - Der Personalrat muss bei Arbeitszeit und Arbeitsort mitbestimmen (§ 74 HPVG)",
+        "Falsch - Der Personalrat muss bei Arbeitszeit und Arbeitsort mitbestimmen (§§ 74, 77 HPVG)",
         "Der Chef hat recht, das ist eine reine Managemententscheidung",
         "Das HPVG gilt nicht für Homeoffice",
         "Der Personalrat darf nur beraten, nicht blockieren"
@@ -32,7 +32,7 @@
       "options": [
         "Ja, wenn der Personalrat zustimmt",
         "Ja, Information reicht",
-        "Nein – Versetzungen unterliegen der Mitbestimmung (§ 77 HPVG)",
+        "Nein – Versetzungen unterliegen der Mitbestimmung (§ 75 HPVG)",
         "Nur bei dringenden Fällen"
       ],
       "correctAnswer": 2,
@@ -134,7 +134,7 @@
       "id": 11,
       "question": "Die Dienststelle führt ein KI-System ein, das automatisch Einarbeitungspläne erstellt. Der Chef sagt: Das ist nur Technik – der Personalrat ist nicht zuständig. Was stimmt?",
       "options": [
-        "Falsch – organisatorische Maßnahmen können mitbestimmungspflichtig sein (§ 81 HPVG)",
+        "Falsch – organisatorische Maßnahmen können mitbestimmungspflichtig sein (§ 78 HPVG)",
         "Technik ist immer Sache der IT",
         "Der Personalrat darf nur informiert werden",
         "KI ist rechtlich noch nicht geregelt"
