@@ -57,7 +57,7 @@ async function handleStart() {
 
   } catch (error) {
     console.error('Fehler beim Laden der Fragen:', error);
-    alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+    alert('Ein Fehler ist aufgetreten. Bitte versuche es erneut.');
     startBtn.classList.remove('loading');
     startBtn.disabled = false;
   }
@@ -197,7 +197,7 @@ async function submitQuiz() {
 
   } catch (error) {
     console.error('Fehler beim Absenden:', error);
-    alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+    alert('Ein Fehler ist aufgetreten. Bitte versuche es erneut.');
     nextBtn.classList.remove('loading');
     nextBtn.disabled = false;
     state.isProcessing = false;
@@ -219,18 +219,18 @@ function showResults(result) {
   let icon, message;
 
   if (percentage >= 90) {
-    icon = '⭐⭐⭐';
-    message = '<strong>Exzellent!</strong><br>Sie kennen sich hervorragend mit dem HPVG aus!';
+    icon = '🏆';
+    message = '<strong>Du bist ein echter Champion!</strong><br>Willst du nicht in zwei Jahren bei den Wahlen zum Personalrat kandidieren?';
     triggerConfetti();
   } else if (percentage >= 70) {
-    icon = '⭐⭐';
-    message = '<strong>Gut!</strong><br>Solides Grundwissen vorhanden. Weiter so!';
+    icon = '💪';
+    message = '<strong>Starke Leistung! 💪</strong><br>Du hast ein solides Fundament und bist für den Büroalltag bestens gewappnet. Da fehlt nicht mehr viel zur absoluten HPVG-Professur. Weiter so!';
   } else if (percentage >= 50) {
-    icon = '⭐';
-    message = '<strong>Okay</strong><br>Es gibt noch Luft nach oben. Schauen Sie sich die Erklärungen an.';
+    icon = '📈';
+    message = '<strong>Nicht schlecht, aber da geht noch was! 📈</strong><br>Du weißt zwar, wo die Glocken hängen, aber noch nicht ganz, wie man sie läutet. Schau dir die Erklärungen an, dann bist du beim nächsten Mal unschlagbar.';
   } else {
     icon = '📚';
-    message = '<strong>Informationsbedarf</strong><br>Gerne mehr erfahren? Wir helfen Ihnen weiter!';
+    message = '<strong>Informationsbedarf mit Hunger-Faktor 📚</strong><br>Du hast noch ordentlich Nachholbedarf in Fragen rund um das Thema Personalvertretungen, lass uns mal gemeinsam zum Essen gehen.';
   }
 
   document.getElementById('resultIcon').textContent = icon;
@@ -238,7 +238,7 @@ function showResults(result) {
 
   // Details
   const detailsContainer = document.getElementById('resultDetails');
-  detailsContainer.innerHTML = '<h3 style="margin-bottom: 16px; font-size: 16px; color: #6b7280;">Ihre Antworten:</h3>';
+  detailsContainer.innerHTML = '<h3 style="margin-bottom: 16px; font-size: 16px; color: #6b7280;">Deine Antworten:</h3>';
 
   results.forEach((item, index) => {
     // Debug: Log the first item to check impact field
@@ -256,7 +256,7 @@ function showResults(result) {
       <div class="result-answer">
         ${item.isCorrect
           ? '✓ Richtig beantwortet'
-          : `✗ Ihre Antwort war falsch<br>Richtig wäre: ${item.correctAnswerText}`
+          : `✗ Deine Antwort war falsch<br>Richtig wäre: ${item.correctAnswerText}`
         }
       </div>
       ${item.impact ? `<div class="result-impact">💡 ${item.impact}</div>` : ''}
