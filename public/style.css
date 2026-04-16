@@ -559,34 +559,6 @@ input[type="checkbox"] {
   }
 }
 
-/* Future Summit Logo */
-.future-summit-logo {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 150px;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-  z-index: 100;
-}
-
-.future-summit-logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
-}
-
-@media (max-width: 640px) {
-  .future-summit-logo {
-    bottom: 12px;
-    left: 12px;
-    width: 120px;
-  }
-}
-
 /* Hidden Helper */
 .hidden {
   display: none !important;

@@ -1,0 +1,173 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Eine hessische AöR will ein Team von 6 auf 3 Personen verkleinern und überwiegend remote arbeiten lassen. Der Chef sagt: „Der Personalrat hat damit nichts zu tun.\" Was stimmt?",
+      "options": [
+        "Der Chef entscheidet allein",
+        "Der Personalrat darf nur beraten",
+        "Das HPVG gilt nicht für Homeoffice",
+        "Falsch – Der Personalrat muss bei Arbeitszeit und Arbeitsort mitbestimmen (§ 74 HPVG)"
+      ],
+      "correctAnswer": 3,
+      "type": "scenario",
+      "impact": "Der Personalrat kann hier für dich aktiv werden – nutze das!"
+    },
+    {
+      "id": 2,
+      "question": "Eine mitbestimmungspflichtige Maßnahme wird ohne Beteiligung des Personalrats umgesetzt. Die Dienststelle macht einfach weiter. Welche Folge hat das?",
+      "options": [
+        "Die Maßnahme bleibt gültig",
+        "Es gibt nur eine Abmahnung",
+        "Der Personalrat kann nur protestieren",
+        "Die Maßnahme ist rechtlich unwirksam"
+      ],
+      "correctAnswer": 3,
+      "type": "surprise",
+      "impact": "Das ist die Superpower des Personalrats – Rechtsschutz für Mitarbeiter!"
+    },
+    {
+      "id": 3,
+      "question": "Ein Mitarbeiter soll versetzt werden. Der Chef informiert den Personalrat nur telefonisch. Ist das ausreichend?",
+      "options": [
+        "Ja, Information reicht",
+        "Ja, wenn der Personalrat zustimmt",
+        "Nur bei dringenden Fällen",
+        "Nein – Versetzungen unterliegen der Mitbestimmung (§ 77 HPVG)"
+      ],
+      "correctAnswer": 3,
+      "type": "scenario",
+      "impact": "Das ist eine echte Mitbestimmung – der Personalrat könnte dafür eintreten!"
+    },
+    {
+      "id": 4,
+      "question": "Welche Beteiligungsformen hat der Personalrat grundsätzlich?",
+      "options": [
+        "Beratung, Kontrolle, Genehmigung",
+        "Zustimmung, Widerspruch, Klage",
+        "Mitwirkung, Vetorecht, Weisungsrecht",
+        "Information, Anhörung, Mitbestimmung"
+      ],
+      "correctAnswer": 3,
+      "type": "concept",
+      "impact": "Mitbestimmung ist das Stärkste – kein Recht ohne Zustimmung!"
+    },
+    {
+      "id": 5,
+      "question": "Der Chef möchte eine Bewerberin einstellen. Der Personalrat verweigert die Zustimmung. Was gilt?",
+      "options": [
+        "Der Chef kann trotzdem einstellen",
+        "Der Personalrat darf nur beraten",
+        "Der Chef entscheidet am Ende allein",
+        "Die Einstellung kann ohne Beteiligung des Personalrats nicht umgesetzt werden"
+      ],
+      "correctAnswer": 3,
+      "type": "scenario",
+      "impact": "Einstellungen sind mitbestimmungspflichtig – der Personalrat kann blockieren!"
+    },
+    {
+      "id": 6,
+      "question": "Dienststelle und Personalrat können sich bei einer mitbestimmungspflichtigen Maßnahme nicht einigen. Wer entscheidet?",
+      "options": [
+        "Der Behördenleiter",
+        "Das Arbeitsgericht",
+        "Das Ministerium",
+        "Die Einigungsstelle"
+      ],
+      "correctAnswer": 3,
+      "type": "surprise",
+      "impact": "Es gibt eine neutrale Instanz – keiner kann einfach durchboxen!"
+    },
+    {
+      "id": 7,
+      "question": "Ein Mitarbeiter beschwert sich über seine Leistungsbeurteilung. Der Personalrat sagt: „Das ist nur Sache deines Vorgesetzten.\" Ist das richtig?",
+      "options": [
+        "Ja, der Personalrat ist nicht zuständig",
+        "Ja, wenn der Chef entscheidet",
+        "Nur bei Beförderungen",
+        "Nein – Beschäftigte dürfen sich mit Beschwerden an den Personalrat wenden"
+      ],
+      "correctAnswer": 3,
+      "type": "scenario",
+      "impact": "Der Personalrat ist deine erste Anlaufstelle – auch für Einzelfälle!"
+    },
+    {
+      "id": 8,
+      "question": "Wann kann eine Dienstvereinbarung abgeschlossen werden?",
+      "options": [
+        "Immer, wenn Dienststelle und Personalrat wollen",
+        "Nur bei organisatorischen Maßnahmen",
+        "Nur bei personellen Maßnahmen",
+        "Wenn keine gesetzliche oder tarifliche Regelung entgegensteht"
+      ],
+      "correctAnswer": 3,
+      "type": "concept",
+      "impact": "Dienstvereinbarungen sind flexibel – aber nicht unbegrenzt!"
+    },
+    {
+      "id": 9,
+      "question": "Der Chef will einen Mitarbeiter „zur Strafe\" versetzen. Der Personalrat verweigert die Zustimmung. Was passiert?",
+      "options": [
+        "Die Versetzung erfolgt trotzdem",
+        "Der Chef entscheidet allein",
+        "Der Personalrat darf nur beraten",
+        "Die Maßnahme kann ohne Zustimmung nicht umgesetzt werden"
+      ],
+      "correctAnswer": 3,
+      "type": "surprise",
+      "impact": "Bestrafungs-Versetzung? Der Personalrat hat Überraschungs-Power!"
+    },
+    {
+      "id": 10,
+      "question": "Bei einem Streit zwischen Personalrat und Dienststelle über Beteiligungsrechte: Welches Gericht ist zuständig?",
+      "options": [
+        "Arbeitsgericht",
+        "Sozialgericht",
+        "Bundesgerichtshof",
+        "Verwaltungsgericht"
+      ],
+      "correctAnswer": 3,
+      "type": "concept",
+      "impact": "Im Extremfall kann es vor Gericht gehen – nutze die Rechtssicherheit!"
+    },
+    {
+      "id": 11,
+      "question": "Die Dienststelle führt ein KI-Tool ein, das automatisch Einarbeitungspläne erstellt. Der Chef sagt: „Das ist nur Technik, der Personalrat ist nicht zuständig.\" Was stimmt?",
+      "options": [
+        "Technik ist immer Sache der IT",
+        "Der Personalrat darf nur informiert werden",
+        "KI ist rechtlich noch nicht geregelt",
+        "Falsch – organisatorische Maßnahmen können mitbestimmungspflichtig sein (§ 81 HPVG)"
+      ],
+      "correctAnswer": 3,
+      "type": "scenario",
+      "impact": "Personalrat kann eine Dienstvereinbarung aushandeln – z.B. für Transparenz & Überprüfbarkeit der KI!"
+    },
+    {
+      "id": 12,
+      "question": "Ein schwerbehinderter Mitarbeiter soll versetzt werden. Welche Beteiligung ist erforderlich?",
+      "options": [
+        "Nur der Personalrat",
+        "Nur die Dienststelle",
+        "Nur das Integrationsamt",
+        "Die Schwerbehindertenvertretung muss zusätzlich beteiligt werden"
+      ],
+      "correctAnswer": 3,
+      "type": "concept",
+      "impact": "SBV ist nicht nur eine Funktion des Personalrats – sie hat eigene Mitspracherechte!"
+    },
+    {
+      "id": 13,
+      "question": "Ein Mitarbeiter ist mehrfach längere Zeit krank. Die Dienststelle sagt: „Das ist nur Sache des Arztes.\" Was gilt?",
+      "options": [
+        "Die Dienststelle entscheidet allein",
+        "Der Personalrat ist nicht beteiligt",
+        "Es gibt keine besondere Regelung",
+        "Es muss ein Betriebliches Eingliederungsmanagement (BEM) geprüft werden"
+      ],
+      "correctAnswer": 3,
+      "type": "concept",
+      "impact": "BEM ist oft der Hebel, um den Arbeitsplatz zu sichern – nutze es!"
+    }
+  ]
+}

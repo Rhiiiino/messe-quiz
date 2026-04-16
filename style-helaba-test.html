@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helaba Farbpalette - Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #333;
+            font-size: 32px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .color-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .color-swatch {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .color-info {
+            padding: 20px;
+        }
+
+        .color-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .color-value {
+            font-size: 12px;
+            margin-bottom: 8px;
+            font-family: 'Courier New', monospace;
+            color: #666;
+            padding: 4px 8px;
+            background: #f9f9f9;
+            border-left: 3px solid #ddd;
+            border-radius: 2px;
+        }
+
+        .color-value strong {
+            color: #333;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            color: #333;
+        }
+
+        .demo-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .button-demo {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #004874;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #003556;
+        }
+
+        .btn-secondary {
+            background: #009ee3;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #0085c1;
+        }
+
+        .btn-success {
+            background: #4da630;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #3d8424;
+        }
+
+        .btn-danger {
+            background: #FF0000;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #cc0000;
+        }
+
+        .text-demo {
+            margin: 20px 0;
+        }
+
+        .text-demo p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .text-primary { color: #004874; font-weight: 600; }
+        .text-secondary { color: #009ee3; font-weight: 600; }
+        .text-success { color: #4da630; font-weight: 600; }
+        .text-danger { color: #FF0000; font-weight: 600; }
+
+        .bg-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .bg-box {
+            padding: 20px;
+            border-radius: 6px;
+            color: #333;
+            font-weight: 600;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .bg-primary { background: #004874; color: white; }
+        .bg-secondary { background: #009ee3; color: white; }
+        .bg-success { background: #4da630; color: white; }
+        .bg-danger { background: #FF0000; color: white; }
+        .bg-gray1 { background: #ececec; }
+        .bg-gray2 { background: #dadada; }
+        .bg-gray3 { background: #b2b2b2; color: white; }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Helaba Farbpalette - Test</h1>
+
+        <!-- Hauptfarbpalette -->
+        <div class="section-title">Hauptfarbpalette</div>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #004874;">Primärfarbe</div>
+                <div class="color-info">
+                    <div class="color-name">Dunkelblau</div>
+                    <div class="color-value"><strong>HEX:</strong> #004874</div>
+                    <div class="color-value"><strong>RGB:</strong> 0, 72, 116</div>
+                    <div class="color-value"><strong>CMYK:</strong> 100, 45, 11, 49</div>
+                    <div class="color-value"><strong>Pantone:</strong> 2955U</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #FF0000;">Sparkasse</div>
+                <div class="color-info">
+                    <div class="color-name">Rot</div>
+                    <div class="color-value"><strong>HEX:</strong> #FF0000</div>
+                    <div class="color-value"><strong>RGB:</strong> 255, 0, 0</div>
+                    <div class="color-value"><strong>CMYK:</strong> 0, 100, 0, 0</div>
+                    <div class="color-value"><strong>Pantone:</strong> 178BU</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Akzentfarben -->
+        <div class="section-title">Akzentfarben</div>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #009ee3;">Akzent 1</div>
+                <div class="color-info">
+                    <div class="color-name">Cyan Blau</div>
+                    <div class="color-value"><strong>HEX:</strong> #009ee3</div>
+                    <div class="color-value"><strong>RGB:</strong> 0, 158, 227</div>
+                    <div class="color-value"><strong>CMYK:</strong> 100, 0, 0, 0</div>
+                    <div class="color-value"><strong>Pantone:</strong> Prozess Blue U</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #4da630;">Akzent 2</div>
+                <div class="color-info">
+                    <div class="color-name">Grün</div>
+                    <div class="color-value"><strong>HEX:</strong> #4da630</div>
+                    <div class="color-value"><strong>RGB:</strong> 77, 166, 48</div>
+                    <div class="color-value"><strong>CMYK:</strong> 70, 0, 100, 0</div>
+                    <div class="color-value"><strong>Pantone:</strong> 376U</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graustufen -->
+        <div class="section-title">Graustufen</div>
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #ececec; color: #333;">Grau 1</div>
+                <div class="color-info">
+                    <div class="color-name">Hell</div>
+                    <div class="color-value"><strong>HEX:</strong> #ececec</div>
+                    <div class="color-value"><strong>RGB:</strong> 236, 236, 236</div>
+                    <div class="color-value"><strong>CMYK:</strong> 0, 0, 0, 10</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #dadada; color: #333;">Grau 2</div>
+                <div class="color-info">
+                    <div class="color-name">Mittel</div>
+                    <div class="color-value"><strong>HEX:</strong> #dadada</div>
+                    <div class="color-value"><strong>RGB:</strong> 218, 218, 218</div>
+                    <div class="color-value"><strong>CMYK:</strong> 0, 0, 0, 20</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #b2b2b2;">Grau 3</div>
+                <div class="color-info">
+                    <div class="color-name">Dunkel</div>
+                    <div class="color-value"><strong>HEX:</strong> #b2b2b2</div>
+                    <div class="color-value"><strong>RGB:</strong> 178, 178, 178</div>
+                    <div class="color-value"><strong>CMYK:</strong> 0, 0, 0, 40</div>
+                </div>
+            </div>
+
+            <div class="color-card">
+                <div class="color-swatch" style="background: #000000;">Schwarz</div>
+                <div class="color-info">
+                    <div class="color-name">Schwarz</div>
+                    <div class="color-value"><strong>HEX:</strong> #000000</div>
+                    <div class="color-value"><strong>RGB:</strong> 0, 0, 0</div>
+                    <div class="color-value"><strong>CMYK:</strong> 0, 0, 0, 100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Demo -->
+        <div class="section-title">Button Demo</div>
+        <div class="demo-section">
+            <div class="button-demo">
+                <button class="btn-primary">Primary Button</button>
+                <button class="btn-secondary">Secondary Button</button>
+                <button class="btn-success">Success Button</button>
+                <button class="btn-danger">Danger Button</button>
+            </div>
+        </div>
+
+        <!-- Text Demo -->
+        <div class="section-title">Text Farben</div>
+        <div class="demo-section">
+            <div class="text-demo">
+                <p class="text-primary">Primärer Text - Dunkelblau (#004874)</p>
+                <p class="text-secondary">Sekundärer Text - Cyan Blau (#009ee3)</p>
+                <p class="text-success">Erfolg/Positiv - Grün (#4da630)</p>
+                <p class="text-danger">Fehler/Warnung - Rot (#FF0000)</p>
+            </div>
+        </div>
+
+        <!-- Background Demo -->
+        <div class="section-title">Hintergrund Demo</div>
+        <div class="demo-section">
+            <div class="bg-demo">
+                <div class="bg-box bg-primary">Primary</div>
+                <div class="bg-box bg-secondary">Secondary</div>
+                <div class="bg-box bg-success">Success</div>
+                <div class="bg-box bg-danger">Danger</div>
+                <div class="bg-box bg-gray1">Grau 1</div>
+                <div class="bg-box bg-gray2">Grau 2</div>
+                <div class="bg-box bg-gray3">Grau 3</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Helaba Farbpalette Test - Erstellt am 23. März 2026</p>
+            <p>Quelle: Helaba Farben.pdf</p>
+        </div>
+    </div>
+</body>
+</html>
