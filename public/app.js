@@ -14,6 +14,7 @@ const screens = {
   result: document.getElementById('resultScreen')
 };
 
+const futureLogoElement = document.querySelector('.future-summit-logo');
 const startBtn = document.getElementById('startBtn');
 const progressBar = document.getElementById('progressBar');
 const progressFill = document.getElementById('progressFill');
@@ -79,6 +80,20 @@ function switchScreen(from, to) {
       to.classList.remove('slide-in-right');
     }, 400);
   }, 400);
+
+  // Update logo visibility (show on quiz and result screens)
+  updateLogoVisibility(to);
+}
+
+// Update Future Summit Logo Visibility
+function updateLogoVisibility(activeScreen) {
+  if (futureLogoElement) {
+    if (activeScreen === screens.quiz || activeScreen === screens.result) {
+      futureLogoElement.style.opacity = '1';
+    } else {
+      futureLogoElement.style.opacity = '0';
+    }
+  }
 }
 
 // Load Question
